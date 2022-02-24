@@ -1,0 +1,30 @@
+package com.cobarrubias.week5hw;
+
+import java.util.NoSuchElementException;
+import java.util.Optional;
+
+public class Optionals {
+
+	public static void main(String[] args) {
+		
+		checkAnimal("Bear");
+		
+	}
+	
+	public static Animal animalMethod(Optional<Animal> optionalAnimal) {
+		
+		return optionalAnimal.orElseThrow(() -> new NoSuchElementException("Animal not found :("));
+		
+	}
+	
+	public static void checkAnimal(String animal) {
+		Animal bear = animalMethod(Optional.of(new Animal(animal)));
+		System.out.println(bear);
+		try {
+			animalMethod(Optional.empty());
+		} catch (NoSuchElementException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+}

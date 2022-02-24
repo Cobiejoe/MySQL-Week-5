@@ -1,0 +1,28 @@
+package com.cobarrubias.week5hw;
+
+public class Animal {
+
+	private String name;
+	
+	public Animal(String name) {
+		this.setName(name);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public static int compare(Animal a1, Animal a2) {
+		return a1.name.compareTo(a2.name);
+	}
+
+	@Override
+	public String toString() {
+		return "Animal [name=" + name + "]";
+	}
+
+}

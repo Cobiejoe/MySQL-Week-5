@@ -1,0 +1,17 @@
+package com.cobarrubias.week5hw;
+
+import java.util.List;
+
+public class SortedAnimals {
+	
+	
+	// sort using lambda
+	public static List<Animal> lambdaSort(List<Animal> animals) {
+		
+		List<Animal> animalList = animals;
+		animalList.sort((a1, a2) -> Animal.compare(a1, a2));
+		
+		return animalList;
+	}
+	
+}

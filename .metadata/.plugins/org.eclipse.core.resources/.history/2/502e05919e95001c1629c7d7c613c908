@@ -1,0 +1,15 @@
+package com.cobarrubias.week5hw;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SortedAnimals {
+
+	public static List<Animal> animals = new ArrayList<>(List.of(new Animal("Cat"), new Animal("Dog"),
+			new Animal("Monkey"), new Animal("Cheetah"), new Animal("Elephant")));
+	
+	int lambaCompare = (Animal a1, Animal a2) -> {
+		return Animal.compare(a1, a2);
+	};
+
+}

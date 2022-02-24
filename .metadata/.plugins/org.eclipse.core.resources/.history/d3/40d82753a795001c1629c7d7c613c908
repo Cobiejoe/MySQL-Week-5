@@ -1,0 +1,16 @@
+package com.cobarrubias.week5hw;
+
+import java.util.List;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		List<Animal> lambdaList = SortedAnimals.lambdaSort(Animal.animals);
+		//System.out.println(lambdaList);
+		
+		List<Animal> methodRefList = SortedAnimals.methodRefSort(Animal.animals);
+		System.out.println(methodRefList);
+		
+	}
+}

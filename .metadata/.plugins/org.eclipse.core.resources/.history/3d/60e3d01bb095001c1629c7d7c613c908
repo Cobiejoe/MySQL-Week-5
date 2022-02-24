@@ -1,0 +1,17 @@
+package com.cobarrubias.week5hw;
+
+public class Optionals {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	public static Animal animalMetod(Optional<Animal> optionalAnimal) {
+		
+		return optioan
+		
+	}
+	
+}

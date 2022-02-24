@@ -1,0 +1,34 @@
+package com.cobarrubias.week5hw;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Animal {
+
+	private String name;
+
+	public static List<Animal> animals = new ArrayList<>(List.of(new Animal("Cat"), new Animal("Dog"),
+			new Animal("Monkey"), new Animal("Cheetah"), new Animal("Elephant")));
+	
+	public Animal(String name) {
+		this.setName(name);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public static int compare(Animal a1, Animal a2) {
+		return a1.name.compareTo(a2.name);
+	}
+
+	@Override
+	public String toString() {
+		return "Animal [name=" + name + "]";
+	}
+
+}
